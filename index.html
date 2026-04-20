@@ -1,71 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset=“UTF-8”>
-<title>Exercise</title>
+    <meta charset="UTF-8">
+    <title>Web Programming Exercise</title>
 
-<style>
-/* 表格 */
-table {
-  border-collapse: collapse;
-  margin: 50px;
-}
+    <style>
+        body {
+            font-family: Arial;
+        }
 
-th, td {
-  border: 2px solid black;
-  padding: 10px;
-  text-align: center;
-  width: 80px;
-}
+        /* ===== Table 樣式 ===== */
+        table {
+            border-collapse: collapse;
+            margin: 50px;
+        }
 
-/* header */
-th {
-  background-color: black;
-  color: yellow;
-}
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+            width: 100px;
+        }
 
-/* 交錯顏色 */
-tr:nth-child(odd) {
-  background-color: white;
-}
+        th {
+            background-color: #444;
+            color: white;
+        }
 
-/* 固定div */
-.fixed-box {
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  border: 3px solid green;
-  padding: 10px;
-  width: 150px;
-}
-</style>
+        /* 不同顏色 */
+        .yellow {
+            background-color: yellow;
+        }
 
+        .white {
+            background-color: white;
+        }
+
+        /* ===== 固定右上角 div ===== */
+        .fixed-box {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border: 3px solid green;
+            padding: 15px;
+            width: 200px;
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
 
-<table>
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>2</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>3</td>
-  </tr>
-</table>
+    <!-- Table -->
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr class="yellow">
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr class="white">
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr class="yellow">
+            <td>3</td>
+            <td>3</td>
+        </tr>
+    </table>
 
-<div class=“fixed-box”>
-  This div element has position: fixed;
-</div>
+    <!-- 固定在右上角 -->
+    <div class="fixed-box">
+        This div element has position: fixed;
+    </div>
+
+</body>
+</html>
 
 </body>
 </html>
